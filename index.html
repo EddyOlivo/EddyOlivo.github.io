@@ -117,7 +117,7 @@
                             <span>Toyota Etios 1.5 MT GLP</span>
                           <h5 class="card-title">$14,500</h5>
                           <p class="card-text">Regresa con su nueva y renovada máscara al mejor precio.</p>
-                          <a href="#" class="btn btn-primary">Cotizar ahora</a></br>
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Cotizar ahora</button>
                         </div>
                       </div>
 
@@ -178,6 +178,43 @@
             
         </div>
         </section>
+
+    
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Complete sus datos</h5><br>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Nombres Completos</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Dni</label>
+            <input type="text" class="form-control" id="recipient-dni>
+          </div>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Celular</label>
+            <input type="text" class="form-control" id="recipient-cell">
+          </div>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="recipient-email">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Enviar</button>
+        <button type="button" class="btn btn-danger">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
 
         <section class="price container">
             <h2 class="subtitle">Obten el plan perfecto para aprender</h2>
